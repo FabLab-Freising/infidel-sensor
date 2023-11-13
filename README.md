@@ -24,6 +24,13 @@ Detailed documention for InFiDEL: https://infidel-sensor.readthedocs.io/ <-- Out
 ## Assembly and Setup
 [![Assembly and Setup Instructions on Youtube](https://img.youtube.com/vi/RYgdLPe_T0c/0.jpg)](https://www.youtube.com/watch?v=RYgdLPe_T0c)
 
+## Wiring for Programming:
+See the Pinout below on how to connect the Programmer with the sensor:<br>
+Pin marked '1' is MISO, Pin marked '6' is GND 
+![Pinout](https://github.com/FabLab-Freising/infidel-sensor/assets/16453385/5a8d78e2-36d3-433f-94e5-9f5259c71590)
+
+
+
 ### Calibration
 - Press Button and Power on Board
 - LED should flash 10 times fast to indicate start of calibration --> Release button while flashing fast!
