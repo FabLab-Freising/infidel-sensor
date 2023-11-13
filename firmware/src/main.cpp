@@ -87,7 +87,7 @@ int16_t dia_table[numtemps][2] = {
   //After init Values are read from EEPROM
  
   { 0     , 3000 },  // safety
-  { 619   , 2090 }, //2mm drill bit
+  { 619   , 2000 }, //2mm drill bit
   { 702   , 1700 }, //1.7mm
   { 817   , 1400 }, //1.4mm
   { 1000  , 1000 }, // 1mm
