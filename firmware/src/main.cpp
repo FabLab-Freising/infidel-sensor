@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 /*  Firmware for the **49* (eg SS495) hall-sensor based filament diameter sensor.
     Reads analog value from the sensor and provides a mapped and filtered diameter reading over I2C (optional analog output)
 
@@ -15,6 +17,20 @@
 
 #include <TinyWireS.h>
 #include <EEPROM.h>
+
+//function declarations
+void receiveISR(uint8_t num_bytes);
+void requestISR();
+int16_t convert2dia(int16_t in);
+void read_eeprom_tab();
+uint8_t read_eeprom_chksum();
+void write_eeprom_tab();
+void check_for_calibrate();
+void flash_led(uint8_t count);
+void wait_for_button_press();
+uint16_t sample_AD_cal_val(uint8_t count);
+void calibrate();
+
 
 //pins as named on PCB
 #define FAULT_IO_LED 4 //on-board LED and digital output pin
