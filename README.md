@@ -8,6 +8,9 @@
   Originally created by Thomas Sanladerer
 </p>
 
+<b>2023-11-13, cad435 @ fablab Freising: <br>
+	- Updated Readme to be up to date</b>
+
 *A cheap, yet precise filament diameter sensor, intended to compensate for filament diameter deviations in real-time.*
 
 The InFiDEL is a cheap (< $5) filament diameter sensor intended for use with FDM 3d printers.
@@ -16,22 +19,24 @@ The main idea is to use the sensor to correct for filament diameter deviations w
 
 Based on this proof-of-concept: https://www.youmagine.com/designs/filament-diameter-sensor
 
-Detailed documention for InFiDEL: https://infidel-sensor.readthedocs.io/
+Detailed documention for InFiDEL: https://infidel-sensor.readthedocs.io/ <-- Outdated
 
 ## Assembly and Setup
 [![Assembly and Setup Instructions on Youtube](https://img.youtube.com/vi/RYgdLPe_T0c/0.jpg)](https://www.youtube.com/watch?v=RYgdLPe_T0c)
 
 ### Calibration
-- Flash board with calibration.ino
-- Connect a host via I2C (see provided host-example.ino)
-- Insert each calibration drill bit shafts and replace the lookup table entries in driver.ino with your own measurements
-  * Measure the actual diameter of the shafts and fill second column
-  * Use the host's output *1000 to fill first column
-- Finally, flash driver.ino with your values filled out
-- Hub should now output exact diameter values
-
-#### Note:
-Analog output is currently not enabled in driver.ino (I2C and FAULT pin only)
+- Press Button and Power on Board
+- LED should flash 10 times fast to indicate start of calibration --> Release button while flashing fast!
+  * Led will flash once every second
+  * Insert 1.4mm drillbit
+  * press button
+  * Led will flash once every second
+  * Insert 1.7mm drillbit
+  * press button
+  * Led will flash once every second
+  * Insert 2mm drillbit
+  * press button
+- Values will be stored and device will resume normal operation
 
 
 ## BOM
@@ -73,8 +78,8 @@ Pins may be replaced with screws or grubscrews, which may result in decreased pr
 - Short length of PTFE tube
 
 ### Calibration Accessories
-- 1 1.5mm drill bit
-- 1 1.7mm or 1.8mm drill bit 
+- 1 1.4mm drill bit
+- 1 1.7mm drill bit 
 - 1 2mm drill bit
 - Calipers for verifying drill bit shaft diameter
 
