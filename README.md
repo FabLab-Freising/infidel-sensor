@@ -27,7 +27,8 @@ Detailed documention for InFiDEL: https://infidel-sensor.readthedocs.io/ <-- Out
 ## Wiring for Programming:
 See the Pinout below on how to connect the Programmer with the sensor:<br>
 Pin marked '1' is MISO, Pin marked '6' is GND 
-![Pinout](https://github.com/FabLab-Freising/infidel-sensor/assets/16453385/5a8d78e2-36d3-433f-94e5-9f5259c71590)
+
+![Pinout__](https://github.com/FabLab-Freising/infidel-sensor/assets/16453385/2d70bc79-dd25-4504-a9f8-c7134b62e4b5)
 
 
 
