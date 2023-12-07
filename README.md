@@ -8,8 +8,11 @@
   Originally created by Thomas Sanladerer
 </p>
 
-<b>2023-11-13, cad435 @ fablab Freising: <br>
-	- Updated Readme to be up to date</b>
+<b>2023-11-13, cad435 @ fablab Freising: </b><br>
+	- Updated Readme to be up to date <br>
+ <b>2023-12-07, cad435 @ fablab Freising: </b><br>
+ 	- Updated Code, Removed I2C communication entirely as those sensors are always interfaced with an Analog voltage corresponding to the diameter.<br>
+   	- UART Communication for easy debugging was favoured 
 
 *A cheap, yet precise filament diameter sensor, intended to compensate for filament diameter deviations in real-time.*
 
@@ -32,10 +35,16 @@ Pin marked '1' is MISO, Pin marked '6' is GND
 
 ![Pinout__](https://github.com/FabLab-Freising/infidel-sensor/assets/16453385/2d70bc79-dd25-4504-a9f8-c7134b62e4b5)
 
+## Wiring for Usage:
+ - OUT is an analog output voltage corresponding to the Filament Diameter <br>
+ - SCK is Serial out, 57600 BAUD, Usefull for Calibration <br>
+ - SDA is configured as Serial in, but not used at this moment <br>
+
+ - UART will periodically (about 3 times a second) spit out "R:\<raw value\>" and "D:\<diameter\>"
 
 
 ### Calibration
-- Press Button and Power on Board
+- Press Button and Power on Board --> Connecting via TTL-UART will promt you what to do 
 - LED should flash 10 times fast to indicate start of calibration --> Release button while flashing fast!
   * Led will flash once every second
   * Insert 1.4mm drillbit
