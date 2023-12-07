@@ -104,8 +104,8 @@ void loop()
     //write PWM for analog value generation
     analogWrite(A_OUT, (uint8_t)(aout_val));
 
-      //light LED and pull up FAULT_IO_LED if sensor saturated, button pressed or diameter low
-    if (in < 3 or dia < 1.5) 
+    //light LED and pull up FAULT_IO_LED if button pressed or diameter low
+    if (dia < 1.5) 
     {
         digitalWrite(FAULT_IO_LED, HIGH);
     }
