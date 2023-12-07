@@ -24,6 +24,8 @@ Detailed documention for InFiDEL: https://infidel-sensor.readthedocs.io/ <-- Out
 ## Assembly and Setup
 [![Assembly and Setup Instructions on Youtube](https://img.youtube.com/vi/RYgdLPe_T0c/0.jpg)](https://www.youtube.com/watch?v=RYgdLPe_T0c)
 
+<b> ATTENTION: </b> with this branch you must glue the magnet in so that the LED lights UP when the magnet is pressed against the sensor!
+
 ## Wiring for Programming:
 See the Pinout below on how to connect the Programmer with the sensor:<br>
 Pin marked '1' is MISO, Pin marked '6' is GND 
