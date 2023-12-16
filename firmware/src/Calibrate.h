@@ -58,7 +58,7 @@ void calibrate(){
     /*  Self-calibration
     *  
     *  Press button, insert 1.4mm brill bit shaft, press to confirm reading
-    *  Repeat for 1.7mm, 2mm
+    *  Repeat for 1.8mm, 2mm
     *  (optional: use interpolated value based on point between 1.5 and 2mm if 1.7mm if read with implausible value
     */
 
@@ -88,12 +88,12 @@ void calibrate(){
     if(cal_sample_AD_val > 0) dia_table[3][0] = cal_sample_AD_val;
 
     LED_ON;
-    Monitor.println("Insert 1.7mm Bit & Press Button");
+    Monitor.println("Insert 1.8mm Bit & Press Button");
     wait_for_button_press();
     LED_OFF;
     //Sample Value für AD to DIA Table --> 100 Samples
     cal_sample_AD_val = sample_AD_cal_val(100);
-    //write ADC Value for 1.7mm into Table
+    //write ADC Value for 1.8mm into Table
     if(cal_sample_AD_val > 0) dia_table[2][0] = cal_sample_AD_val;
 
 

@@ -13,6 +13,9 @@
  <b>2023-12-07, cad435 @ fablab Freising: </b><br>
  	- Updated Code, Removed I2C communication entirely as those sensors are always interfaced with an Analog voltage corresponding to the diameter.<br>
    	- UART Communication for easy debugging was favoured 
+	
+ <b>2023-12-14, cad435 @ fablab Freising: </b><br>
+ 	- Updated Code, so that 1.8mm Drillbit is used as it seems to be available more common than 1.7mm
 
 *A cheap, yet precise filament diameter sensor, intended to compensate for filament diameter deviations in real-time.*
 
@@ -46,13 +49,13 @@ Pin marked '1' is MISO, Pin marked '6' is GND
 ### Calibration
 - Press Button and Power on Board --> Connecting via TTL-UART will promt you what to do 
 - LED should flash 10 times fast to indicate start of calibration --> Release button while flashing fast!
-  * Led will flash once every second
+  * Led will flash
   * Insert 1.4mm drillbit
   * press button
-  * Led will flash once every second
-  * Insert 1.7mm drillbit
+  * Led will flash
+  * Insert 1.8mm drillbit
   * press button
-  * Led will flash once every second
+  * Led will flash
   * Insert 2mm drillbit
   * press button
 - Values will be stored and device will resume normal operation
@@ -98,7 +101,7 @@ Pins may be replaced with screws or grubscrews, which may result in decreased pr
 
 ### Calibration Accessories
 - 1 1.4mm drill bit
-- 1 1.7mm drill bit 
+- 1 1.8mm drill bit 
 - 1 2mm drill bit
 - Calipers for verifying drill bit shaft diameter
 
